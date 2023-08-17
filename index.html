@@ -11,7 +11,7 @@
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: #000000;
   }
 
   .custom-button {
@@ -23,29 +23,30 @@
     border: none;
     border-radius: 25px;
     cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease; /* Adicionando transform na transição */
-    box-sizing: border-box;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease; 
+    width: 200px; /* Aumentando a largura do botão */
   }
 
   .custom-button:hover {
     background-color: #ff0000;
-    box-shadow: 0 0 10px #e63636; /* Melhorando o efeito de sombra */
-    transform: scale(1.05); /* Aumentando o tamanho ao passar o mouse */
+    box-shadow: 0 0 10px #e63636; 
+    transform: scale(1.05); 
   }
 
   .custom-button:active {
-    transform: scale(0.95); /* Diminuindo o tamanho ao clicar */
+    transform: scale(0.95); 
   }
 
   @media (max-width: 768px) {
     .custom-button {
       padding: 12px 24px; /* Ajustando o padding para telas menores */
       font-size: 16px; /* Reduzindo a fonte para telas menores */
+      width: 160px; /* Ajustando a largura do botão para telas menores */
     }
   }
 </style>
 </head>
 <body>
-  <button class="custom-button">Button</button>
+  <button class="custom-button">BUTTON</button>
 </body>
 </html>
