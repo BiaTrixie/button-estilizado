@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+
+  .custom-button {
+    display: inline-block;
+    padding: 15px 30px; /* Aumentando o padding para um botão maior */
+    font-size: 18px; /* Aumentando o tamanho da fonte */
+    background-color: #df0b0b;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease; /* Adicionando transform na transição */
+    box-sizing: border-box;
+  }
+
+  .custom-button:hover {
+    background-color: #ff0000;
+    box-shadow: 0 0 10px #e63636; /* Melhorando o efeito de sombra */
+    transform: scale(1.05); /* Aumentando o tamanho ao passar o mouse */
+  }
+
+  .custom-button:active {
+    transform: scale(0.95); /* Diminuindo o tamanho ao clicar */
+  }
+
+  @media (max-width: 768px) {
+    .custom-button {
+      padding: 12px 24px; /* Ajustando o padding para telas menores */
+      font-size: 16px; /* Reduzindo a fonte para telas menores */
+    }
+  }
+</style>
+</head>
+<body>
+  <button class="custom-button">Button</button>
+</body>
+</html>
